@@ -1,0 +1,4 @@
+620328a87f0c64247fb69006792629e77315ec1afe825bb51cd085b3b8568451  helm/n8n-0.4.0.tgz
+f2a4557c6ad918f09ac8b21ed44e57f95420fe8f4375de8c03cc6c32d3c7dead  helm/open-webui-8.12.2-2-pcai.tgz
+82e6f2dbd78470e7c8ef3227d768848e77a42ba3b010cbcd6deed8087c204226  n8n/PCAI_RAG_ALL_IN_ONE.json
+25ae8d01f768bc4d909d4bec98e4cc85e37bc2f701cbbcd45864dc5c50a6478a  open-webui/pcai_document_rag_no_auth.py
