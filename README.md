@@ -1,6 +1,6 @@
 # n8n workshop | HPE Private Cloud AI
 
-Files for a document-question-answering workshop using **n8n**, **Qdrant**, **MLIS** and **Open WebUI** on HPE Private Cloud AI (PCAI), including AI Essentials 1.12 environments.
+Files for a document-question-answering workshop using **n8n**, **Qdrant**, **MLIS** and **Open WebUI** on HPE Private Cloud AI (PCAI).
 
 The Helm packages and the workflow/pipeline files in this repository are the supplied workshop artifacts. They are kept **unchanged**. Cluster-specific URLs, models, passwords and collection names must be configured after import.
 
