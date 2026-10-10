@@ -17,7 +17,7 @@ The Helm packages and the workflow/pipeline files in this repository are the sup
 ## Before starting
 
 - Access to a PCAI namespace where the two charts can be installed; suitable persistent storage for PostgreSQL and Open WebUI.
-- Qdrant deployed and reachable from n8n (not included in these files).
+- Qdrant deployed and reachable from n8n.
 - An **embedding model** and a **chat/instruct model** running in MLIS, both exposing the OpenAI-compatible endpoints needed by the workflow. Save their deployment URLs, model IDs and required API tokens.
 - Admin access to n8n and Open WebUI. Use a different Helm release and external hostname for each installation.
 
