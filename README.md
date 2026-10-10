@@ -10,7 +10,7 @@ The Helm packages and the workflow/pipeline files in this repository are the sup
 | --- | --- |
 | [`helm/n8n-0.4.0.tgz`](helm/n8n-0.4.0.tgz) | n8n Helm chart with PostgreSQL. |
 | [`helm/open-webui-8.12.2-2-pcai.tgz`](helm/open-webui-8.12.2-2-pcai.tgz) | Open WebUI chart, including the Pipelines dependency. |
-| [`helm/open-webui-8.12.2-2-pcai.tgz`](helm/qdrant-1.14.0.tgz) | Qdrant Helmchart. |
+| [`helm/qdrant-1.14.0.tgz`](helm/qdrant-1.14.0.tgz) | Qdrant Helmchart. |
 | [`n8n/PCAI_RAG_ALL_IN_ONE.json`](n8n/PCAI_RAG_ALL_IN_ONE.json) | n8n workflow: PDF upload and document chat. |
 | [`open-webui/pcai_document_rag_no_auth.py`](open-webui/pcai_document_rag_no_auth.py) | Open WebUI Pipeline that calls the n8n Chat Trigger (no Basic Auth). |
 
