@@ -43,15 +43,3 @@ Pipelines:    http://<pipelines-service>.<namespace>.svc.cluster.local:9099
 
 Replace all angle-bracket placeholders with values from the customer's cluster. For Qdrant, `<qdrant-service>` is its **Kubernetes Service name**, `<namespace>` is the **PCAI project/namespace**, and `<service-port>` is the port exposed by that Service (often `6333`). Test `http://<qdrant-service>.<namespace>.svc.cluster.local:<service-port>/collections` from a pod that can reach Qdrant, but enter only the base URL in the n8n credential. The `svc.cluster.local` pattern does **not** guarantee that every MLIS/Knative deployment exposes direct Service routing; confirm with `kubectl get svc -n <namespace>`.
 
-### Notes from the supplied workflow
-
-- Both Qdrant vector-store nodes actually select the collection **`anywhere`**. Some sticky notes and the final upload-success message say **`pcai_n8n_pdf_demo`**. Those messages are not the active node settings. Use the collection selected in INSERT and RETRIEVE, or change both to a new workshop collection.
-- The JSON contains model IDs and credential *references* from the original instance. Recreate/select working credentials and replace the model IDs for the customer's MLIS deployments after importing; the JSON is **not** a portable credential backup.
-- The Python Pipeline contains a sample n8n hostname and webhook ID. **Change `N8N_CHAT_URL` in Valves** for every customer. It sends an unauthenticated request and is intended for a controlled demo; secure the webhook before broader exposure.
-- The Open WebUI chart's existing `ezua.virtualService.endpoint` example may conflict with another installation. Change it during import to a unique hostname.
-
-For the full customer procedure, see the **separate Overleaf guide** supplied with this workshop. Keep actual API keys, login passwords, and private cluster configuration out of a public repository.
-
-## File integrity
-
-Checksums for the four source artifacts are provided in [`SHA256SUMS.txt`](SHA256SUMS.txt). The Helm TGZ files were copied as supplied, not rebuilt or edited.
